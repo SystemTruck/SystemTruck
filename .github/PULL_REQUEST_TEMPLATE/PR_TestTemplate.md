@@ -8,7 +8,7 @@ Closes # (issue)
 
 ## Type of change
 
-Please select the best option or add another one if nothing fits.
+Please select the best option (and delete the other options) or add another one if nothing fits.
 
 - [ ] Bug fix (without breaking existing functionality)
 - [ ] New feature (without breaking existing functionality)
@@ -21,7 +21,6 @@ If you ran any test, please describe the tests that you ran to verify your chang
 Provide instructions so we can reproduce. Please also list any relevant details for your test configuration
 
 - [ ] Test A
-- [ ] Test B
 
 # Checklist:
 
