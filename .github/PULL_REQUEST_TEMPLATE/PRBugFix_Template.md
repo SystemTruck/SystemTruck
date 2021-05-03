@@ -15,8 +15,7 @@ Please select the best option (and delete the other options) or add another one 
 - [ ] My code follows the style guidelines of this project
 - [ ] Finish my changes
 - [ ] My changes generate no new errors or warnings
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [ ] Update the issue
 - [ ] Ask for review
 
 
