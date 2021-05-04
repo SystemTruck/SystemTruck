@@ -17,7 +17,7 @@
 
 ## Checklist
 - [ ] Select asignee(s)
-- [ ] Select tags (optional)
+- [ ] Select labels (optional)
 - [ ] Associate to the project
 
 ## Steps to Reproduce <Delete these if not applicable>
@@ -51,7 +51,7 @@ To fix the issue:
 
 ## Checklist
 - [ ] Select asignee(s)
-- [ ] Select tags (optional)
+- [ ] Select labels (optional)
 - [ ] Associate to the project
 
 ## Include feature
