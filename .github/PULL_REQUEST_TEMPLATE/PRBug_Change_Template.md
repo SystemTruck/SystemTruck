@@ -2,15 +2,17 @@
 <#issue is the one linked to the PR>
 <TypeIssue is BC for Bug Fix or change, NF for New Feature or TE for Testing>
 
-# Description
-<Please describe the new feature.> 
-<Include a summary of the change(s) you're making.>
+## Description
+<Please describe the problem, root cause and the solution provided. >
+<Include a summary of the change(s) and which issue is fixed or closed (optional). >
 
 Fixes # (issue) 
 
 ## Type of change
+<Please select the best option (and delete the other option).>
 
-- [ ] New feature 
+- [ ] Bug fix 
+- [ ] Change 
 
 ## Checklist:
 
@@ -21,3 +23,7 @@ Fixes # (issue)
 - [ ] Code follows the style guidelines of this project
 - [ ] Changes generate no new errors or warnings
 - [ ] Link the issue
+
+
+
+

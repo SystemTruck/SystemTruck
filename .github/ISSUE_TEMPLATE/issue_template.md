@@ -1,3 +1,12 @@
+---
+name: Issue template
+about: Template for developing in SytemTruck.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 # Title 
 <!--- Choose a title depending on the issue. -->
 <!--- Include: BC for Bug Fix or Change, NF for New Feature, TE for TESTING. -->
