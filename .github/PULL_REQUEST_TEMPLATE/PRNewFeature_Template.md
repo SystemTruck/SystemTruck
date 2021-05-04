@@ -1,10 +1,11 @@
-<For the title use the following structure: #issue_TypeIssue_BriefDescription>
-<#issue is the one linked to the PR>
-<TypeIssue is BC for Bug Fix or change, NF for New Feature or TE for Testing>
+# 4_NF_New Template (example of title)
+<!--- For the title and name of the PR use the following structure: #issue_TypeIssue_BriefDescription
+#issue is the one linked to the PR
+TypeIssue is BC for Bug Fix or change, NF for New Feature or TE for Testing -->
 
-# Description
-<Please describe the new feature.> 
-<Include a summary of the change(s) you're making.>
+## Description
+<!---Please describe the new feature.
+Include a summary of the change(s) you're making.-->
 
 Fixes # (issue) 
 
