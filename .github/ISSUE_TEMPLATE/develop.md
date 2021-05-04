@@ -20,7 +20,7 @@
 - [ ] Select tags (optional)
 - [ ] Associate to the project
 
-## Steps to Reproduce 
+## Steps to Reproduce <Delete these if not applicable>
 <!--- Provide a link to a live example, or an unambiguous set of steps to -->
 <!--- reproduce this bug or change. Include code to reproduce, if relevant -->
 1.
@@ -28,7 +28,7 @@
 3.
 4.
 
-## Environment
+## Environment <Delete these if not applicable>
 <!--- Include as many relevant details about the environment you experienced the bug in -->
 * IDE:
 * Microcontroller:
