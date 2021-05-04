@@ -1,13 +1,7 @@
 # Title 
 <!--- Choose a title depending on the issue. -->
-<!--- BFx for Bug Fix or NF for New Feature. -->
----
-Name: Develop
-About: ''
-Labels: ''
-Assignees: ''
+<!--- Include: BFx for Bug Fix or NF for New Feature. -->
 
----
 ## Description
 <!--- Please write a detailed summary about the issue and root cause. -->
 
@@ -23,6 +17,7 @@ Assignees: ''
 
 ## Checklist
 - [ ] Select asignee(s)
+- [ ] Select tags (optional)
 - [ ] Associate to the project
 
 ## Steps to Reproduce the bug 
@@ -62,6 +57,7 @@ Trying to fix the issue:
 
 ## Checklist
 - [ ] Select asignee(s)
+- [ ] Select tags (optional)
 - [ ] Associate to the project
 
 ## Steps to Reproduce the feature 
