@@ -10,14 +10,14 @@
 #### The truck must stop automatically if an obstacle is detected
 #### The truck must stop automatically if the weight of the load exceeds 1 pound
 
-#Communication:
+# Communication:
 #### The truck must be able to communicate via Radiofrequency
 #### The truck must be able to communicate via Bluetooth
 #### The truck state must be communicated in a can bus
 #### The truck firmware must be upgradeable via can bus
 #### The truck must have a display on the front that shows a custom message
 
-#Sensors:
+# Sensors:
 #### The truck must be able to take picture or video and store in a SD memory
 #### The truck must be able to record audio and save it
 #### The truck must display the Temperature
@@ -28,7 +28,7 @@
 #### The truck must have an odometer (meter sensitive) (configureable to display in meters or feet)
 #### The truck firmware must be able to sense and communicate the weigh of the Load
 
-#Other:
+# Other:
 #### The truck must use as little energy as possible
 #### The truck must have a rechargeable battery
 
