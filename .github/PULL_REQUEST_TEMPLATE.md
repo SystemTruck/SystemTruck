@@ -26,10 +26,11 @@ Fixes # (issue)
 - [ ] Select labels (optional)
 - [ ] Associate to the project
 - [ ] Select reviewer(s)
-- [ ] Code follows the style guidelines of this project
-- [ ] Changes generate no new errors or warnings
+- [ ] Check if changes generate no new errors or warnings
 - [ ] Link the issue
-
+- [ ] Make changes if needed
+- [ ] Merge the PR
+- [ ] Close the PR
 
 
 
@@ -53,8 +54,9 @@ Fixes # (issue)
 - [ ] Select labels (optional)
 - [ ] Associate to the project
 - [ ] Select reviewer(s)
-- [ ] Code follows the style guidelines of this project
-- [ ] Changes generate no new errors or warnings
+- [ ] Check if changes generate no new errors or warnings
 - [ ] Link the issue
-
+- [ ] Make changes if needed
+- [ ] Merge the PR
+- [ ] Close the PR
 
