@@ -1,6 +1,6 @@
 # Title 
 <!--- Choose a title depending on the issue. -->
-<!--- Include: BFx for Bug Fix or NF for New Feature. -->
+<!--- Include: BC for Bug Fix or Change, NF for New Feature, TE for TESTING. -->
 
 ## Description
 <!--- Please write a detailed summary about the issue and root cause. -->
@@ -20,9 +20,9 @@
 - [ ] Select tags (optional)
 - [ ] Associate to the project
 
-## Steps to Reproduce the bug 
+## Steps to Reproduce 
 <!--- Provide a link to a live example, or an unambiguous set of steps to -->
-<!--- reproduce this bug. Include code to reproduce, if relevant -->
+<!--- reproduce this bug or change. Include code to reproduce, if relevant -->
 1.
 2.
 3.
@@ -33,10 +33,10 @@
 * IDE:
 * Microcontroller:
 
-## Possible Fix
+## Possible Change
 <!--- Suggest a fix or reason for the bug (optional) -->
 
-Trying to fix the issue:
+To fix the issue:
 - [ ] Create a Branch
 - [ ] Make your changes
 - [ ] Create a Pull Request 
@@ -66,4 +66,8 @@ Trying to fix the issue:
 * IDE:
 * Microcontroller:
 
+
+
+
+<!--- IF issue is a TEST you can use the following sections -->
 
