@@ -1,6 +1,6 @@
 # SystemTruck
 
-![SystemT](/assets/Logo.png)
+![SystemT](/assets/Logo.PMG)
 
 System Truck is a toy truck that implements many sensors and software interface obtaining several data in order to control the truck and display this information. This truck includes a lot of features such as:
 
