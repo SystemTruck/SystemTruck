@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-# Title 
+# Title
 <!--- Choose a title depending on the issue. -->
 <!--- Include: BC for Bug Fix or Change, NF for New Feature, TE for TESTING. -->
 
@@ -16,8 +16,8 @@ assignees: ''
 
 
 
-<!--- IF issue is a BUG FIX you can use the following sections -->
-
+<!--- IF issue is a BUG FIX or a change in code, documentation etc you can use the following sections -->
+<!--- Please make sure to delete the sections not needed -->
 ## Expected Behavior
 <!--- Explain what should happen -->
 
@@ -48,13 +48,14 @@ assignees: ''
 To fix the issue:
 - [ ] Create a Branch
 - [ ] Make your changes
-- [ ] Create a Pull Request 
+- [ ] Create a Pull Request
 - [ ] Link the Pull request to the issue
 
 
 
 
 <!--- IF issue is a NEW FEATURE you can use the following sections -->
+<!--- Please make sure to delete the sections not needed -->
 ## Desired Behavior
 <!--- Explain what will happen -->
 
@@ -67,7 +68,7 @@ To fix the issue:
 - [ ] Create a Branch
 - [ ] Implement the feature
 - [ ] Explain how the feature works
-- [ ] Create a Pull Request 
+- [ ] Create a Pull Request
 - [ ] Link the Pull request to the issue
 
 ## Environment
@@ -79,4 +80,3 @@ To fix the issue:
 
 
 <!--- IF issue is a TEST you can use the following sections -->
-
