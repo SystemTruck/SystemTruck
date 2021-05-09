@@ -5,7 +5,7 @@
 #### AT-10 The truck must have an analogic control system for velocity
 #### AT-2 The truck must have the ability to change direction while going forward, reverse or being idle
 #### AT-3 The truck must have right and left turn lights. 'Auto' and 'Manual' configurations
-#### AT-9 The truck must have headlights. 'On', 'Off' and 'Auto' (based on light sensor) configurations
+#### AT-11 The truck must have headlights. 'On', 'Off' and 'Auto' (based on light sensor) configurations
 #### AT-4 The truck must have lights on the roof. 'On', 'Off' and 'Auto' (based on light sensor) configurations
 #### AT-5 The truck must have the ability to load and unload the semi trailer
 #### AT-6 The truck must have the ability to play audio signals stored in nonvolatile memory
