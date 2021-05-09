@@ -26,7 +26,7 @@ Fixes # (issue)
 - [ ] Associate to the project
 - [ ] Select reviewer(s)
 - [ ] Check if changes generate no new errors or warnings
-- [ ] Link the issue
+- [ ] Link the issue and tag the issue #(issue_number) (DO NOT LINK if the issue must not be closed by the PR)
 - [ ] Make changes if needed
 
 > Please make sure that author does not resolve the comments added in the PR, just another member may solve the requested changes.
