@@ -1,0 +1,1 @@
+This folder shall be used to add documentation of tools, what IDE is recomended, SDK generated, scripts etc etc
