@@ -19,7 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "L298N_Motor_driver.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -50,7 +49,7 @@
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-L298N_HandleTypeDef TestingHandle;
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -65,7 +64,7 @@ L298N_HandleTypeDef TestingHandle;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-L298N_STD_TYPE test_return;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -87,10 +86,7 @@ L298N_STD_TYPE test_return;
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-  L298N_Get_Default_Config(&TestingHandle);
-  //TestingHandle.PWM_TIMER.Instance = TIM13;
 
-  test_return = L298N_driver_init(&TestingHandle);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -189,8 +185,6 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
 }
-
-
 
 /* USER CODE BEGIN 4 */
 
