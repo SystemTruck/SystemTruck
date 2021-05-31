@@ -23,6 +23,7 @@ typedef struct {
 	uint32_t PWMPin;
 	GPIO_TypeDef *PWM_Pin_Port;
 	TIM_OC_InitTypeDef PWM_Handle;
+	GPIO_InitTypeDef PWM_GPIO_Init;
 } L298N_Channel_Typedef;
 
 typedef struct {
@@ -35,10 +36,10 @@ typedef struct {
 	uint16_t Frequency_PWM;
 } L298N_HandleTypeDef;
 
-
-void L298N_SET_TIMER_Period(L298N_HandleTypeDef * L298N, uint32_t Frequency_In_Hz);
+L298N_STD_TYPE L298N_start_pwm(L298N_HandleTypeDef * L298N,uint8_t dutycycle);
 void L298N_Get_Default_Config(L298N_HandleTypeDef * L298N);
 L298N_STD_TYPE L298N_driver_init(L298N_HandleTypeDef * L298N);
+void L298N_Set_Duty_Cycle(L298N_HandleTypeDef * L298N,uint8_t dutycycle);
 
 
 

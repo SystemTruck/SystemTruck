@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "L298N_Motor_driver.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -64,7 +64,7 @@ static void MX_GPIO_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	L298N_HandleTypeDef TestHandle;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -86,7 +86,15 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+	L298N_Get_Default_Config(&TestHandle);
+	L298N_driver_init(&TestHandle);
+	L298N_start_pwm(&TestHandle,75);
+	HAL_Delay(1000);
+	L298N_Set_Duty_Cycle(&TestHandle,50);
+	HAL_Delay(1000);
+	L298N_Set_Duty_Cycle(&TestHandle,30);
+	HAL_Delay(1000);
+	L298N_Set_Duty_Cycle(&TestHandle,80);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -216,6 +224,7 @@ void Error_Handler(void)
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
+	Error_Handler();
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
