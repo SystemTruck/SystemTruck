@@ -55,3 +55,4 @@ dkms.conf
 Debug/
 .metadata/
 .settings/
+*.launch
