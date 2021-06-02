@@ -16,6 +16,13 @@ typedef enum
   L298_ERROR    = 0x01U,
 } L298N_STD_TYPE;
 
+typedef enum
+{
+	L298N_IDLE 		= 0U,
+	L298N_FORWARD  	= 1U,
+	L298N_REVERSE  	= 1U,
+} L298N_Direction;
+
 typedef TIM_HandleTypeDef PWM_TIM_HandleTypeDef;
 
 typedef struct {
@@ -40,6 +47,7 @@ L298N_STD_TYPE L298N_start_pwm(L298N_HandleTypeDef * L298N,uint8_t dutycycle);
 void L298N_Get_Default_Config(L298N_HandleTypeDef * L298N);
 L298N_STD_TYPE L298N_driver_init(L298N_HandleTypeDef * L298N);
 void L298N_Set_Duty_Cycle(L298N_HandleTypeDef * L298N,uint8_t dutycycle);
+void L298N_Set_Direction(L298N_HandleTypeDef *L298N, L298N_Direction Direction);
 
 
 

@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "main.h"
 #include "L298N_Motor_driver.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -42,7 +43,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -65,6 +65,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	L298N_HandleTypeDef TestHandle;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
