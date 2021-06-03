@@ -146,19 +146,21 @@ void L298N_Get_Default_Config(L298N_HandleTypeDef * L298N){
  * 					FORWARD = 1;
  * 					REVERSE = 2;
  */
-void L298N_Set_Direction(L298N_HandleTypeDef *L298N, L298N_Direction Direction){
-	HAL_GPIO_WritePin(L298N->DirectionPin_1_Port, L298N->DirectionPin_1, RESET);
-	HAL_GPIO_WritePin(L298N->DirectionPin_2_Port, L298N->DirectionPin_2, RESET);
-
+L298N_STD_TYPE L298N_Set_Direction(L298N_HandleTypeDef *L298N, L298N_Direction Direction){
+	L298N_STD_TYPE retval = L298_OK;
 	if ( L298N_FORWARD == Direction) {
-		HAL_GPIO_WritePin(L298N->DirectionPin_1_Port, L298N->DirectionPin_1, SET);
 		HAL_GPIO_WritePin(L298N->DirectionPin_2_Port, L298N->DirectionPin_2, RESET);
+		HAL_GPIO_WritePin(L298N->DirectionPin_1_Port, L298N->DirectionPin_1, SET);
 	}else if (L298N_REVERSE == Direction){
 		HAL_GPIO_WritePin(L298N->DirectionPin_1_Port, L298N->DirectionPin_1, RESET);
 		HAL_GPIO_WritePin(L298N->DirectionPin_2_Port, L298N->DirectionPin_2, SET);
+	} else if (L298N_BRAKE == Direction) {
+		HAL_GPIO_WritePin(L298N->DirectionPin_1_Port, L298N->DirectionPin_1, RESET);
+		HAL_GPIO_WritePin(L298N->DirectionPin_2_Port, L298N->DirectionPin_2, RESET);
 	} else {
-		/**<Do nothing */
+		retval = L298_ERROR;
 	}
+	return retval;
 }
 
 /**

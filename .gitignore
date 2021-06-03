@@ -56,3 +56,4 @@ Debug/
 .metadata/
 .settings/
 *.launch
+*.xml
