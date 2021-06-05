@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "L298N_Motor_driver.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -42,6 +42,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -63,7 +64,6 @@ static void MX_GPIO_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	L298N_HandleTypeDef TestHandle;
 
   /* USER CODE END 1 */
 
@@ -86,15 +86,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-	L298N_Get_Default_Config(&TestHandle);
-	L298N_driver_init(&TestHandle);
-	L298N_start_pwm(&TestHandle,75);
-	HAL_Delay(1000);
-	L298N_Set_Duty_Cycle(&TestHandle,50);
-	HAL_Delay(1000);
-	L298N_Set_Duty_Cycle(&TestHandle,30);
-	HAL_Delay(1000);
-	L298N_Set_Duty_Cycle(&TestHandle,80);
+  SystemTruckMotors_main();
   /* USER CODE END 2 */
 
   /* Infinite loop */

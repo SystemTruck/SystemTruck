@@ -1,9 +1,16 @@
-/*
- * L298N_Motor_driver.c
- *
- *  Created on: May 23, 2021
- *      Author: Olaf Huerta
- */
+/**
+  ******************************************************************************
+  * @file           : L298N_Motor_driver.c
+  * @brief          : Main program body
+  ******************************************************************************
+  *
+  *
+  *
+  *
+  ******************************************************************************
+  */
+
+
 /* Includes ------------------------------------------------------------------*/
 #include "L298N_Motor_driver.h"
 
@@ -190,25 +197,25 @@ static void L298N_Enable_TIM_RCC(L298N_HandleTypeDef * L298N) {
 		__HAL_RCC_TIM1_CLK_ENABLE();
 	}else if(TIM2 == (L298N->PWM_TIMER.Instance) ){
 		__HAL_RCC_TIM2_CLK_ENABLE();
-	}else if(TIM3 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM3 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM3_CLK_ENABLE();
-	}else if(TIM4 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM4 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM4_CLK_ENABLE();
-	}else if(TIM5 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM5 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM5_CLK_ENABLE();
-	}else if(TIM6 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM6 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM6_CLK_ENABLE();
-	}else if(TIM7 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM7 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM7_CLK_ENABLE();
-	}else if(TIM8 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM8 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM8_CLK_ENABLE();
-	}else if(TIM9 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM9 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM9_CLK_ENABLE();
-	}else if(TIM10 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM10 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM10_CLK_ENABLE();
-	}else if(TIM11 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM11 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM11_CLK_ENABLE();
-	}else if(TIM12 == L298N->PWM_TIMER.Instance ){
+	}else if(TIM12 == L298N->PWM_TIMER.Instance){
 		__HAL_RCC_TIM12_CLK_ENABLE();
 	}
 }

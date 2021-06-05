@@ -43,6 +43,8 @@ typedef struct {
 	uint16_t Frequency_PWM;
 } L298N_HandleTypeDef;
 
+
+
 L298N_STD_TYPE L298N_start_pwm(L298N_HandleTypeDef * L298N,uint8_t dutycycle);
 void L298N_Get_Default_Config(L298N_HandleTypeDef * L298N);
 L298N_STD_TYPE L298N_driver_init(L298N_HandleTypeDef * L298N);

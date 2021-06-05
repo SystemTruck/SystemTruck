@@ -47,7 +47,7 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+int SystemTruckMotors_main(void);
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
