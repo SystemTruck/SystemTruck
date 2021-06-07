@@ -54,3 +54,6 @@ dkms.conf
  # SystemTruck Ignores
 Debug/
 .metadata/
+.settings/
+*.launch
+*.xml
