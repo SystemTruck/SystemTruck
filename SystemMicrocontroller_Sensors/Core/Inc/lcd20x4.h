@@ -81,12 +81,21 @@ void LCD_Init(LCD_HandleTypeDef * lcd);
 void LCD_PinInit(LCD_HandleTypeDef * lcd);
 void LCD_Enable_GPIO_RCC(LCD_HandleTypeDef * lcd);
 
+void LCD_GetDefaultConfig(LCD_HandleTypeDef* hlcd);
+
 /**
- * @brief  //Prints to current cursor position
+ * @brief  Prints to current cursor position
  * @param  lcd - LCD_HandleTypeDef structure specifies GPIO pins
  * @param  str - compatible with printf style formatting
  */
 void LCD_Printf(LCD_HandleTypeDef * lcd, const char* str, ...);
+
+/**
+  * @brief  sets cursor position
+  * @param  line - This parameter can be any value of LCD_LineSelect_TypeDef
+  * @param  col - Between 0 and 19 for 20 character LCD
+  */
+void LCD_SetCursorPosition(LCD_HandleTypeDef * lcd, uint8_t row, uint8_t col);
 
 /**
  * @brief  prints message to a specific line
@@ -98,7 +107,6 @@ void LCD_PrintToLine(LCD_HandleTypeDef * lcd, LCD_LineSelect_TypeDef line, const
 
 
 void LCD_Clear(LCD_HandleTypeDef * lcd);
-void LCD_SetCursorPosition(LCD_HandleTypeDef * lcd, uint8_t row, uint8_t col);
 void LCD_SetCursorMode(LCD_HandleTypeDef * lcd, LCD_CursorMode_TypeDef CursorMode);
 
 

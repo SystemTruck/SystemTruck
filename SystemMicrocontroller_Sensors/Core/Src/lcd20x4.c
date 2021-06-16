@@ -96,6 +96,41 @@ void LCD_Init(LCD_HandleTypeDef * lcd){
 	}
 }
 
+void LCD_GetDefaultConfig(LCD_HandleTypeDef* hlcd){
+
+	hlcd->Mode = LCD_MODE_4BITS;
+	hlcd->CursorMode = LCD_CURSOR_ON_BLINK_ON;
+
+	hlcd->RS_port = GPIOE;
+	hlcd->RS_pin = GPIO_PIN_7;
+
+	hlcd->RW_port = GPIOE;
+	hlcd->RW_pin = GPIO_PIN_9;
+
+	hlcd->EN_port = GPIOE;
+	hlcd->EN_pin = GPIO_PIN_11;
+
+	/* Pins not used in 4 bit mode
+	hlcd->DB0_port = GPIOE;
+	hlcd->DB0_pin = GPIO_PIN_10;
+	hlcd->DB1_port = GPIOE;
+	hlcd->DB1_pin = GPIO_PIN_12;
+	hlcd->DB2_port = GPIOE;
+	hlcd->DB2_pin = GPIO_PIN_14;
+	hlcd->DB3_port = GPIOD;
+	hlcd->DB3_pin = GPIO_PIN_8;
+	*/
+
+	hlcd->DB4_port = GPIOE;
+	hlcd->DB4_pin = GPIO_PIN_15;
+	hlcd->DB5_port = GPIOB;
+	hlcd->DB5_pin = GPIO_PIN_11;
+	hlcd->DB6_port = GPIOB;
+	hlcd->DB6_pin = GPIO_PIN_13;
+	hlcd->DB7_port = GPIOB;
+	hlcd->DB7_pin = GPIO_PIN_15;
+}
+
 
 /**
   * @brief  Initializes the GPIOx peripherals in the provided LCD_Init structure.
@@ -315,7 +350,7 @@ static void LCD_WriteCommand(LCD_HandleTypeDef * lcd, uint8_t command)
 void LCD_WriteData(LCD_HandleTypeDef * lcd, uint8_t data)
 {
 	HAL_GPIO_WritePin(lcd->RS_port, lcd->RS_pin, LCD_RS_DATA);			// Write to data register
-
+	
 	if(LCD_MODE_4BITS == lcd->Mode)
 	{
 		LCD_Write(lcd, data >> 4);
@@ -325,7 +360,6 @@ void LCD_WriteData(LCD_HandleTypeDef * lcd, uint8_t data)
 	{
 		LCD_Write(lcd, data);
 	}
-
 }
 
 
